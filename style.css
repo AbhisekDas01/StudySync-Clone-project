@@ -19,6 +19,10 @@
     text-decoration: none;
 }
 
+
+.no-scroll{
+    overflow: hidden;
+}
 body{
     background-color: var(--background-color);
     text-align: center;
@@ -274,6 +278,42 @@ body{
     .image-container{
         height: 50vh;
     }
+
+    .overlay{
+        display: none;
+    }
+
+
+    .overlay.active{
+        display: block;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+    .nav-bar.active{
+        background-color: rgba(188, 186, 201, 0.401);
+        backdrop-filter: blur(6px);
+        padding-block-start: 80px;
+        display: flex;
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        
+        padding-inline: 30px;
+        width: 200px;
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .nav-link{
+        color: black;
+    }
+
 
 }
 

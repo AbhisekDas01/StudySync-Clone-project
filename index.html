@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudySync</title>
     <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="./script.js"></script>
 </head>
 
-<body>
+<body >
     <div class="header">
         <header class="header-content">
 
@@ -18,12 +20,12 @@
             </a>
 
             <!-- Home Features Pricing Blog About -->
-            <nav class="nav-bar">
-                <a href="#Home" class="nav-link">Home</a>
-                <a href="#Features" class="nav-link">Features</a>
-                <a href="#Pricing" class="nav-link">Pricing</a>
-                <a href="#Blog" class="nav-link">Blog</a>
-                <a href="#About" class="nav-link">About</a>
+            <nav class="nav-bar" data-nav-bar>
+                <a href="#Home" class="nav-link" data-nav-toggler>Home</a>
+                <a href="#Features" class="nav-link" data-nav-toggler>Features</a>
+                <a href="#Pricing" class="nav-link" data-nav-toggler>Pricing</a>
+                <a href="#Blog" class="nav-link" data-nav-toggler>Blog</a>
+                <a href="#About" class="nav-link" data-nav-toggler>About</a>
             </nav>
 
 
@@ -33,9 +35,12 @@
             </button>
 
             <!-- Hamburger part -->
-            <button type="button" class="menu-btn">
+            <button type="button" class="menu-btn" data-nav-toggler>
                 <img src="images/Hamburger.svg" alt="menu-button" class="menu-icon">
             </button>
+
+
+            <div class="overlay" data-nav-toggler></div>
         </header>
     </div>
 
